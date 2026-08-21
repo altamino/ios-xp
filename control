@@ -1,0 +1,9 @@
+Package: com.altamino.xp
+Name: AltAmino XPerience
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Redirects hostname, QOL and etc!
+Maintainer: Shader
+Author: Shader
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3)
