@@ -25,9 +25,9 @@
         id statusCode = orig[@"kNDCServiceAPIStatusCodeKey"];
         if (statusCode && [statusCode respondsToSelector:@selector(integerValue)] && [statusCode integerValue] == 270) {
             NSMutableDictionary *patchedUserInfo = [orig mutableCopy];
-            
+
             patchedUserInfo[@"kNDCErrorUserInfoResponseVerifiedKey"] = @YES;
-            
+
             NSLog(@"[ServersNdcMsgSigIsNotExist] Patched kNDCErrorUserInfoResponseVerifiedKey to YES for API status 270");
             return [patchedUserInfo copy];
         }
